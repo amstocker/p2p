@@ -1,5 +1,10 @@
-python-libp2p
--------------
+# Python p2p
+
+*This is a work in progress!*  I'm just tryin to wrap my mind around IPFS,
+libp2p, and distributed systems.
+
+
+## Built on asyncio
 
 This is a Python implementation of libp2p as described in more detail
 (here)[https://github.com/ipfs/specs/tree/master/libp2p].  The interface described
@@ -18,6 +23,9 @@ p2p.Transport = asyncio.transports.Transport
 
 ```
 
+
+## p2p Node
+
 The base functionality of libp2p comes from the `Node` class for which the
 user provides support for any protocols:
 
@@ -26,7 +34,7 @@ from p2p import Node, BaseProtocolHandler
 
 
 class MyProtocolHandler(BaseProtocolHandler):
-  ...
+  pass
 
 
 if __name__ == "__main__":
