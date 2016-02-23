@@ -7,7 +7,7 @@ libp2p, and distributed systems.
 ## Built on asyncio
 
 This is a Python implementation of libp2p as described in more detail
-(here)[https://github.com/ipfs/specs/tree/master/libp2p].  The interface described
+[here](https://github.com/ipfs/specs/tree/master/libp2p).  The interface described
 in the specs uses callbacks, but in the spirit of Python's `asyncio` this
 implentation will make use of coroutines.
 
@@ -39,7 +39,7 @@ class MyProtocolHandler(BaseProtocolHandler):
 
 if __name__ == "__main__":
   
-  # builder new node
+  # build new node
   node = Node(
     config="~/.p2p.conf",
     handlers={
@@ -47,7 +47,7 @@ if __name__ == "__main__":
     }
   )
 
-  # start node
+  # start event loop
   node.run()
 
 ```
